@@ -57,9 +57,9 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             className={`${styles.header} ${
                 isDarkMode ? styles.darkMode : styles.lightMode
             }`}
-        >
+        ><div>Movie</div>
             <div className={styles.center}>
-                <div>Your Site Name</div>
+
                 <a href="#">Movies</a>
                 <GenreButton onClick={toggleGenreMenu} isGenreMenuOpen={isGenreMenuOpen} genres={genres} />
                 <a href="#">Search</a>

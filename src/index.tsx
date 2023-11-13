@@ -6,7 +6,7 @@ import { AppProps } from "./interfaces/types";
 const initialDarkMode = true;
 
 const toggleDarkMode = () => {
-    // Логика для переключения dark mode
+
 };
 
 const renderApp = (isDarkMode: boolean) => {

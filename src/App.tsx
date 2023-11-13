@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-// Импортируйте необходимые типы
+
 import { AppProps, HeaderProps } from "./interfaces/types";
 import MovieList from "./components/MovieList";
 
