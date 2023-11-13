@@ -1,0 +1,30 @@
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.poster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.info {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.year {
+    color: #888;
+}

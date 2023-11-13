@@ -1,19 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { AppProps } from "./interfaces/types";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const initialDarkMode = true;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const toggleDarkMode = () => {
+    // Логика для переключения dark mode
+};
+
+const renderApp = (isDarkMode: boolean) => {
+    const rootElement = document.getElementById('root');
+    if (rootElement) {
+        ReactDOM.createRoot(rootElement).render(
+            <App isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        );
+    }
+};
+
+renderApp(initialDarkMode);

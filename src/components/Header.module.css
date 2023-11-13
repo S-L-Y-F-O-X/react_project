@@ -1,0 +1,86 @@
+.header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.genre-button {
+    position: relative;
+}
+
+.genre-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 100px;
+}
+
+.avatar {
+    margin-left: 50px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+    height: 200px; /* Задайте фиксированную высоту, подходящую для вашего дизайна */
+    overflow-y: scroll; /* Добавьте прокрутку, если список превышает заданную высоту */
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.center:nth-child(n){
+    margin: 10px;
+}
+.lightMode {
+    background-color: #fff;
+    color: #000;
+}
+.userSection {
+    display: flex;
+    align-items: center;
+}
+
+.userSection img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.userSection span {
+    color: #000;
+}
+.darkMode {
+    background-color: #000;
+    color: #fff;
+}
+
+.iconButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.iconButton:focus {
+    outline: none;
+}
+
+.icon {
+    font-size: 20px;
+}
+.iconLight {
+    color: #000;
+}
